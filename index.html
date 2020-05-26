@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+      />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+      />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Bookmarks</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">Bookmarks</h1>
+      <div class="menu">
+        <ul class="menu-list">
+          <li><a class="collection" href="#">Collection</a></li>
+          <!-- <li><a class="favourite" href="#">Favourite</a></li> -->
+        </ul>
+      </div>
+      <button class="addBtn"><i class="fas fa-plus"></i></button>
+      <!------- BOOKMARK CONTENT ------->
+      <div class="bookmark-grid" id="bookmark-container">
+        <!-- EXAMPLE BOOKMARK -->
+        <!-- <div class="card">
+          <div class="function-button">
+            <a class="delete">
+              <i class="far fa-trash-alt"></i>
+            </a>
+          </div>
+          <img src="https://picsum.photos/200" class="title-img">
+          <h3 class="title">Bookmark Example</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
+            explicabo!
+          </p>
+        </div> -->
+        <!-- ADD BOOKMARK HERE -->
+      </div>
+      <!-- MODAL -->
+      <div class="modal">
+        <!-- MODAL CONTENT -->
+        <div class="modal-content">
+          <button id="cancel"><i class="fas fa-times"></i></button>
+          <form action="submit" class="new-item-form">
+            <div class="field">
+              <label>Bookmark Image</label>
+              <select id="titleImg">
+                <option value="0">Select a Image...</option>
+                <option value="200">200</option>
+                <option value="201">201</option>
+                <option value="202">202</option>
+                <option value="203">203</option>
+                <option value="204">204</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Bookmark Title</label>
+              <input type="text" id="title">
+            </div>
+            <div class="field">
+              <label>Description</label>
+              <input type="text" id="description">
+            </div>
+            <button type="submit" id="create">Create</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="dist/index.js"></script>
+  </body>
+</html>
